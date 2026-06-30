@@ -52,7 +52,7 @@
 //     return a * b
 // }
 // console.log(multiply(3, 4));
-    
+
 
 // const calculate = (a, b, callback) => {
 //     return callback(a, b)
@@ -155,7 +155,7 @@
 // students.forEach((students)=> {
 //     if (students.marks >= 50) {
 //         console.log(`${students.name} get ${students.marks} marks`);
-            
+
 //     }
 // })
 
@@ -177,6 +177,78 @@
 // }
 
 // console.log(topStudent(students))
+
+
+// let students = [
+//     { name: "Aayan", marks: 85 },
+//     { name: "Ali", marks: 45 },
+//     { name: "Sara", marks: 72 },
+//     { name: "Ahmed", marks: 91 },
+//     { name: "Zara", marks: 60 }
+// ]
+
+
+// const gradeChecker = students.map((student) => {
+//     if (student.marks >= 90) {
+//         return { name: student.name, grade: "A" } 
+//     } else if (student.marks >= 80) {
+//         return { name: student.name, grade: "B" } 
+//     } else if (student.marks >= 70) {
+//         return { name: student.name, grade: "C" } 
+//     } else if (student.marks >= 60) {
+//         return { name: student.name, grade: "D" } 
+//     } else if (student.marks < 60) {
+//         return { name: student.name, grade: "F" } 
+//     }
+// })
+
+// console.log(gradeChecker);
+
+
+// const divideNum = (num1, num2) => {
+//     try {
+//         if (num2 === 0) {
+//             throw new Error("Cannot divide by zero")
+//         }
+//         return num1 / num2
+//     } catch (error) {
+//         console.log(error.message)
+//     }
+// }
+
+
+// console.log(divideNum(8,2));
+// console.log(divideNum(10, 2))   // 5
+// console.log(divideNum(20, 4))   // 5
+// console.log(divideNum(10, 0))   // Cannot divide by zero
+
+
+
+// const getUserData = (id) => {
+//     return new Promise((resolve, reject) => {
+//         if (id > 0) {
+//             resolve({ id: 1, name: "Aayan" })
+//         }else{
+//             reject("Invalid ID")
+//         }
+//     })
+// }
+
+// getUserData(1)
+//     .then(data => console.log(data))
+//     .catch(error => console.log(error))
+
+// getUserData(-1)
+//     .then(data => console.log(data))
+//     .catch(error => console.log(error))
+
+
+
+
+
+
+
+
 
 
 
