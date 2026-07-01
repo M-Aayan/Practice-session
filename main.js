@@ -244,16 +244,61 @@
 
 
 
+// const getUserData = (id) => {
+//     return new Promise((resolve, reject) => {
+//         if (id > 0) {
+//             resolve({ id: 1, name: "Aayan" })
+//         }else{
+//             reject("Invalid ID")
+//         }
+//     })
+// }
+
+// const fetchUser = async (id) => {
+//     try {
+//         let userData = await getUserData(id)
+//         console.log(userData);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// } 
+
+// fetchUser(-2)
+
+
+
+// const getUser = async () => {
+//     try{
+//     let response = await fetch (`https://jsonplaceholder.typicode.com/users/1`)
+//     let data = await response.json()
+//     console.log(data.name, data.email);
+    
+//     }catch (error) {
+//         console.log(error);
+//     }
+// }
+
+// getUser()
 
 
 
 
+// const jsonStudents = `[
+//     {"name": "Aayan", "marks": 85},
+//     {"name": "Ali", "marks": 45},
+//     {"name": "Sara", "marks": 72},
+//     {"name": "Ahmed", "marks": 91},
+//     {"name": "Zara", "marks": 60}
+// ]`
 
+// const jsonParse = JSON.parse(jsonStudents)
+// const filterStudent = jsonParse.filter((jsonParse)=>{
+//     if (jsonParse.marks > 70) {
+//         return jsonParse
+//     }
+// })
 
-
-
-
-
+// console.log(filterStudent);
 
 
 
