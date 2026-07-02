@@ -302,13 +302,31 @@
 
 
 
+// const btn = document.getElementById("btn")
+// const para = document.getElementById("para")
+
+// btn.addEventListener("click" , ()=>{
+//     para.textContent = "button clicked!"
+// })
 
 
+const btn = document.getElementById("btn")
+const box = document.querySelector(".box")
+
+btn.addEventListener("click" , ()=>{
+    box.classList.toggle("color")
+})
 
 
+const fruits = ["Apple", "Mango", "Banana", "Grapes"]
+const ulFruits = document.createElement("ul")
+fruits.forEach((fruit)=>{
+    let li = document.createElement("li")
+    li.textContent = fruit
+    ulFruits.appendChild(li)
+})
 
-
-
+document.body.appendChild(ulFruits)
 
 
 

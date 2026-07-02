@@ -1,0 +1,15 @@
+.box{
+    height: 10em;
+    width: 10em;
+    border: 1px solid;
+    background-color: green;
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+
+.color{
+    background-color: red;
+}
